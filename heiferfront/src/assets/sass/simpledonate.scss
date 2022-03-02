@@ -1,0 +1,165 @@
+.simple_donate {
+  background-color: $main-color;
+  margin-top: 50px;
+
+  .flex_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.simple_title {
+  text-align: center;
+  color: white;
+  margin: 30px;
+  padding-top: 50px;
+  line-height: 35px;
+}
+
+.icon_n2 {
+  margin-bottom: 20px;
+}
+
+.d_box {
+  background-color: $second-color;
+  margin: 30px 0 0 0;
+  padding: 20px;
+  height: 170px;
+  border-radius: 3px;
+}
+
+.last_box {
+  margin-bottom: 40px;
+}
+
+.fees {
+  margin: 0 auto;
+}
+
+.fees_title {
+  margin: 50px 20px 0 50px;
+}
+
+.fee-box {
+  background-color: $second-color;
+  text-align: center;
+  margin-top: 40px;
+
+  padding: 0 40px 0 40px;
+  height: 450px;
+  border-radius: 3px;
+
+  li {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.first_line {
+  margin-bottom: 40px;
+}
+
+.icon {
+  height: 100%;
+}
+
+.amount {
+  padding-top: 30px;
+  font-weight: bolder;
+}
+
+.amount_sub {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.fees_btn {
+  background-color: $main-color;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  padding: 3px 0 3px 0;
+  width: 200px;
+}
+
+.fee_align {
+  margin: 0 50px 0 50px;
+}
+
+.spring_due {
+  margin: 20px 0 0 50px;
+  font-size: 14px;
+}
+
+.ready {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fees_btn_last {
+  background-color: $main-color;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  padding: 3px 0 3px 0;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.btn_align {
+  text-align: center;
+}
+
+@media screen and (min-width: 780px) {
+  .flex_wrapper {
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+  .simple_title {
+    padding-top: 150px;
+    margin: 40px;
+    width: 30%;
+  }
+
+  .all_boxes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondry_boxes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .d_box {
+    width: 100%;
+    height: 220px;
+    margin: 30px 50px 30px 50px;
+  }
+
+  .fee-box {
+    margin: 50px;
+    height: 560px;
+    width: 30%;
+    padding: 0 20px 0 20px;
+  }
+
+  .last_line {
+    margin-bottom: 100px;
+  }
+
+  li .line {
+    margin-bottom: 25px;
+  }
+
+  .amount_sub {
+    margin-bottom: 50px;
+  }
+
+  .fees_title {
+    width: 50%;
+    line-height: 35px;
+  }
+}

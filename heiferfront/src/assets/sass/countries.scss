@@ -1,0 +1,22 @@
+.countries {
+  margin-top: 50px;
+}
+
+.countries-text {
+  color: $second-color;
+}
+
+.map {
+  margin-top: 40px;
+  height: 100%;
+}
+
+@media screen and (min-width: 780px) {
+  .countries-text {
+    margin-right: 500px;
+  }
+
+  .map {
+    padding-left: 250px;
+  }
+}
