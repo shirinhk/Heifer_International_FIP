@@ -1,0 +1,88 @@
+//@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:wght@100&display=swap");
+
+body {
+  color: $main-color;
+  font-size: $main-font-size;
+  font-family: $main-font-family;
+  max-width: 1800px;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+p {
+  font-family: $second-font-family;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: $second-font-family;
+  font-weight: bolder;
+}
+
+button {
+  font-family: $second-font-family;
+}
+
+.hidden {
+  display: none;
+}
+
+.heifer-header {
+  padding: 10px;
+}
+
+.donate_btn {
+  background-color: $main-color;
+  font-weight: bolder;
+  color: white;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  width: 111px;
+}
+
+@media screen and (min-width: 780px) {
+  .heifer-header {
+    padding: 20px;
+  }
+
+  .donate_btn {
+    background-color: $main-color;
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    padding: 8px 0 8px 0;
+    width: 180px;
+  }
+
+  .logo-m {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+}

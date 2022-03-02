@@ -1,0 +1,189 @@
+.containers {
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+.relative {
+  position: static;
+}
+
+.hero {
+  background-image: url("~@/assets/images/header_mobile_1.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.hero-title {
+  z-index: 0;
+  margin: 200px 50px 0 50px;
+  font-size: 34px;
+}
+
+.hero-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 20px 160px 0 50px;
+  line-height: 25px;
+}
+
+.btn-farmer {
+  background-color: $main-color;
+  font-weight: bolder;
+  color: white;
+  font-size: 14px;
+  padding: 7px 0 7px 0;
+  width: 260px;
+  margin: 20px 0 0 50px;
+}
+
+.home-div {
+  margin-top: 700px;
+}
+
+.home-sec {
+  margin: 40px 110px 0 50px;
+  font-size: 28px;
+}
+
+.home-para {
+  margin: 40px 160px 0 50px;
+  line-height: 25px;
+}
+
+.btn-home {
+  margin: 20px 0px 0 50px;
+  width: 144px;
+}
+
+.steps {
+  background-color: $second-color;
+  margin: 50px 0 0 40px;
+}
+
+.steps-first-line {
+  margin: 0 0 20px 40px;
+  padding-top: 50px;
+}
+
+.steps-sec-line {
+  margin: 20px 150px 20px 40px;
+}
+
+.steps-third-line {
+  margin: 10px 130px 20px 40px;
+  line-height: 25px;
+  font-weight: bolder;
+}
+
+.steps-for-line {
+  margin: 10px 0 10px 40px;
+}
+
+.last-line {
+  padding-bottom: 50px;
+}
+
+i {
+  margin: 30px 0 0 40px;
+}
+
+.food_logo {
+  margin: 50px 0 0 20px;
+}
+
+.food_text {
+  margin-top: 30px;
+}
+
+.video {
+  margin-top: 50px;
+  height: auto;
+}
+
+@media screen and (min-width: 420px) {
+  .hero {
+    background-image: url("~@/assets/images/header_veggies.png");
+    background-repeat: no-repeat;
+    //height:710;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: -99;
+  }
+
+  .hero-title {
+    z-index: 0;
+    margin: 100px 50px 0 50px;
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 20px 50px 0 50px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .hero {
+    text-align: center;
+  }
+  .hero-title {
+    margin-top: 300px;
+    font-size: 40px;
+  }
+
+  .hero-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    margin: 30px 150px 0 150px;
+    line-height: 35px;
+  }
+
+  .btn-farmer {
+    background-color: $main-color;
+    font-weight: bolder;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    width: 280px;
+    margin-top: 30px;
+  }
+
+  .home-div {
+    margin-top: 650px;
+  }
+
+  .home-sec {
+    margin: 40px 180px 0 50px;
+    font-size: 34px;
+  }
+
+  .home-para {
+    margin: 40px 160px 0 50px;
+    line-height: 25px;
+  }
+
+  .btn-home {
+    margin: 20px 0px 0 50px;
+    width: 144px;
+  }
+
+  .food_logo {
+    margin: 50px 0 0 200px;
+  }
+  .food_text {
+    margin: 80px 200px 0 0;
+  }
+}
