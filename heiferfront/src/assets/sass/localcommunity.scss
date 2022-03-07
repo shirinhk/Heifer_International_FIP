@@ -39,13 +39,16 @@
   .com-2 {
     display: block !important;
   }
+}
+
+@media screen and (min-width: 920px) {
   .com_text {
     text-align: center;
   }
 
   .com_sec {
-    width: 30%;
-    height: 276px;
+    width: 60%;
+    min-height: 100%;
   }
   .pics {
     flex-flow: unset;
@@ -53,6 +56,11 @@
 
   .com_text {
     font-size: 28px;
-    padding: 40px 40px 10px 40px;
+    padding: 40px 10px 10px 10px;
+  }
+
+  .scroll_pics {
+    min-height: 100%;
+    width: 100%;
   }
 }
