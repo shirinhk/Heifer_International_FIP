@@ -3,9 +3,9 @@
 
     <header class="heifer-header">
       <nav class="navbar">
-        <img src="@/assets/images/logo_m.png" alt="Heifer logo" class="navbar-brand logo-m">
-        <img src="@/assets/images/logo.png" alt="Heifer logo" class="navbar-brand hidden logo">
-        <button class="btn donate_btn nav-item"> donate </button>
+        <router-link :to="'/home'"><img src="@/assets/images/logo_m.png" alt="Heifer logo" class="navbar-brand logo-m"></router-link>
+        <router-link :to="'/home'"><img src="@/assets/images/logo.png" alt="Heifer logo" class="navbar-brand hidden logo"></router-link>
+        <button class="btn donate_btn nav-item"><router-link :to="'/donate'">donate</router-link></button>
       </nav>
     </header>
 

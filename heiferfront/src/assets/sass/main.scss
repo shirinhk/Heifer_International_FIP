@@ -39,6 +39,14 @@ button {
   font-family: $second-font-family;
 }
 
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hidden {
   display: none;
 }
@@ -80,11 +88,6 @@ footer {
 
   li {
     margin-top: 20px;
-  }
-
-  a:visited {
-    text-decoration: none;
-    color: inherit;
   }
 }
 
