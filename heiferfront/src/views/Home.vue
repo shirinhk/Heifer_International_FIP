@@ -58,7 +58,7 @@
 
       <div class="video">
         <video controls>
-          <source src="@/assets/video/heifer_video.mp4" title="Heifer Reel" type="video/mp4">
+          <source src="@/assets/video/heifer_video_1.mp4" title="Heifer Reel" type="video/mp4">
         </video>
       </div>
 

@@ -56,6 +56,38 @@ button {
   width: 111px;
 }
 
+footer {
+  background-color: $second-color;
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+  .footer_logo {
+    text-align: center;
+  }
+
+  .btn-footer {
+    background-color: $main-color;
+    font-weight: bolder;
+    color: white;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    width: 118px;
+  }
+
+  .footer_margin {
+    margin-left: 40px;
+  }
+
+  li {
+    margin-top: 20px;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 @media screen and (min-width: 780px) {
   .heifer-header {
     padding: 20px;
@@ -84,5 +116,29 @@ button {
 
   h4 {
     font-size: 24px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+
+    .footer_logo {
+      display: none;
+    }
+
+    .footer_logo_lg {
+      display: block;
+    }
+
+    .footer_margin {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+    }
+
+    .footer_nav_2 {
+      margin-left: 70px;
+    }
   }
 }

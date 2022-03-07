@@ -9,7 +9,7 @@
             <h2 class="com_text">This spring, you can be part of some of these amazing projects.</h2>
         </div>
         <div class= "com_pics">
-            <img src="@/assets/images/imgs_scroll.png" alt="Community pictures" class="">
+            <img src="@/assets/images/imgs_scroll.png" alt="Community pictures" class="scroll_pics">
         </div>
     </div>
 </div>
