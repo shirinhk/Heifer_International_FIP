@@ -25,13 +25,17 @@ h2 {
   font-size: 28px;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 h4 {
   font-size: 20px;
 }
 
 h5 {
   font-size: 20px;
-  font-family: $second-font-family;
+  font-family: $third-font-family;
   font-weight: bolder;
 }
 
@@ -53,6 +57,12 @@ a:visited {
 
 .heifer-header {
   padding: 10px;
+  //position: relative;
+  //z-index: 100;
+}
+
+.logo-m {
+  width: 141px;
 }
 
 .donate_btn {
@@ -106,15 +116,15 @@ footer {
   }
 
   .logo-m {
-    display: none;
-  }
-
-  .logo {
-    display: block;
+    width: 168px;
   }
 
   h2 {
     font-size: 34px;
+  }
+
+  h3 {
+    font-size: 28px;
   }
 
   h4 {
@@ -125,6 +135,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    margin-top: 0;
 
     .footer_logo {
       display: none;
