@@ -14,13 +14,16 @@ const routes = [
   {
     path: '/donate',
     name: 'Donate',
-    component: Donate
+    component: Donate,
+    props: true
+
     // route level code-splitting
     // this generates a separate chunk (donate.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     //component: () => import(/* webpackChunkName: "donate" */ '../views/Donate.vue'),
 
-  }
+  },
+
 ]
 
 const router = createRouter({
