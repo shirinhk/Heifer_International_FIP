@@ -4,19 +4,136 @@
 
 .countries-text {
   color: $second-color;
+  margin-bottom: 40px;
+}
+
+.map_container {
+  position: relative;
+  overflow-y: hidden;
 }
 
 .map {
-  margin-top: 40px;
-  height: 100%;
+  max-width: 953px;
+  height: 453px;
+}
+
+.honey {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+
+.milk_1 {
+  position: absolute;
+  top: 320px;
+  left: 230px;
+}
+
+.egg {
+  position: absolute;
+  top: 220px;
+  left: 410px;
+}
+
+.milk_2 {
+  position: absolute;
+  top: 280px;
+  left: 710px;
+}
+
+.honey:hover {
+  cursor: pointer;
+  border: 8px solid $second-color;
+  border-radius: 50px;
+}
+
+.milk_1:hover {
+  cursor: pointer;
+  border: 8px solid $second-color;
+  border-radius: 50px;
+}
+
+.egg:hover {
+  cursor: pointer;
+  border: 8px solid $second-color;
+  border-radius: 50px;
+}
+
+.milk_2:hover {
+  cursor: pointer;
+  border: 8px solid $second-color;
+  border-radius: 50px;
+}
+
+.hover_project {
+  position: absolute;
+  top: 0;
+  left: 70px;
+
+  width: 240px;
+  padding: 10px;
+  background-color: $second-color;
+
+  h4 {
+    margin: 10px 0 10px 0;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 15px;
+  }
+
+  .hover_btn {
+    padding: 1px;
+    width: 200px;
+    border: 1px solid $main-color;
+    margin-top: 20px;
+  }
+}
+
+.honey:hover + .hover_project {
+  display: block;
+}
+
+.milk_1:hover + .hover_project_milk_1 {
+  display: block;
+  top: 0;
+  left: 170px;
+}
+
+.egg:hover + .hover_project_egg {
+  display: block;
+  top: 0;
+  left: 330px;
+}
+
+.milk_2:hover + .hover_project_milk_2 {
+  display: block;
+  top: 0;
+  left: 630px;
+}
+
+#hello {
+  width: 120px;
+  height: 150px;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+  opacity: 0;
 }
 
 @media screen and (min-width: 780px) {
   .countries-text {
     margin-right: 500px;
   }
-
+  .map_container {
+    margin-left: 300px;
+  }
   .map {
-    padding-left: 250px;
+    width: 953px;
+    height: 453px;
   }
 }
