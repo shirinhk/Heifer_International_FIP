@@ -41,8 +41,8 @@
 
   <div class="fees">
     <h2 class="fees_title">You can make a huge impact and also get an incentive to keep doing the work at your home!</h2>
-    <div class="row fee_align">
-      <div class="col-sm fee-box">
+    <div class="fee_align">
+      <div class="fee-box">
         <h2 class="amount">$10</h2>
         <h5 class="amount_sub">monthly</h5>
         <br>
@@ -56,7 +56,7 @@
         <h5 class="spring_due">The subscription lasts until the end of spring.</h5>
       </div>
 
-      <div class="col-sm fee-box">
+      <div class="fee-box">
         <h2 class="amount">$25</h2>
         <h5 class="amount_sub">monthly</h5>
         <br>
@@ -70,7 +70,7 @@
         <h5 class="spring_due">The subscription lasts until the end of spring.</h5>  
       </div>
 
-      <div class="col-sm fee-box fee-box_2">
+      <div class="fee-box fee-box_2">
         <h2 class="amount">$50+</h2>
         <h5 class="amount_sub">monthly</h5>
         <br>

@@ -46,8 +46,8 @@
   background-color: $second-color;
   text-align: center;
   margin: 40px 5px 0 5px;
-
   padding: 0 40px 0 40px;
+  width: 320px;
   height: 500px;
   border-radius: 3px;
 
@@ -85,7 +85,9 @@
 }
 
 .fee_align {
-  margin: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .spring_due {
@@ -112,7 +114,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 700px) {
   .flex_wrapper {
     justify-content: space-between;
     flex-flow: wrap;
@@ -139,10 +141,16 @@
     margin: 30px 50px 30px 50px;
   }
 
+  .fee_align {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
   .fee-box {
-    margin: 50px;
-    height: 580px;
-    width: 30%;
+    margin: 40px;
+    height: 600px;
     padding: 0 20px 0 20px;
   }
 
