@@ -26,7 +26,7 @@
           <div class="d_box">
             <img src="@/assets/images/vector_n2.png" alt="Heifer Icon" class="icon_n2">
             <p>Then, share a picture of you new <br>garden with the hashtag</p>
-            <p>#springwithheifer</p>
+            <p class="bold">#springwithheifer</p>
           </div>
 
           <div class="d_box last_box">
@@ -52,7 +52,8 @@
           <li><img src="@/assets/images/vector_2.png" alt="Heifer_icon" class="icon"><p class="first_line">1 pack of random  vegetable seeds</p></li>
           <li><img src="@/assets/images/vector_2.png" alt="Heifer_icon" class="icon"><p class="first_line last_line">5 trees will be planted each month</p></li>
         </ul>
-        <button class="btn fees_btn">DONATE</button>  
+        <button class="btn fees_btn"><router-link :to="'/donate'">DONATE</router-link></button>
+        <h5 class="spring_due">The subscription lasts until the end of spring.</h5>
       </div>
 
       <div class="col-sm fee-box">
@@ -65,7 +66,8 @@
           <li><img src="@/assets/images/vector_2.png" alt="Heifer_icon" class="icon"><p class="first_line">2 packs of random vegetable seeds</p></li>
           <li><img src="@/assets/images/vector_2.png" alt="Heifer_icon" class="icon"><p class="first_line last_line">10 trees will be planted each month</p></li>
         </ul>
-        <button class="btn fees_btn">DONATE</button>  
+        <button class="btn fees_btn"><router-link :to="'/donate'">DONATE</router-link></button>
+        <h5 class="spring_due">The subscription lasts until the end of spring.</h5>  
       </div>
 
       <div class="col-sm fee-box fee-box_2">
@@ -79,17 +81,19 @@
           <li><img src="@/assets/images/vector_2.png" alt="Heifer_icon" class="icon"><p class="line">10 trees will be planted each month</p></li>
           <li><img src="@/assets/images/vector_2.png" alt="Heifer_icon" class="icon"><p class="first_line line">Enter on a draw to visit a Heifer project of choice in person</p></li>
         </ul>
-        <button class="btn fees_btn">DONATE</button>  
+        <button class="btn fees_btn"><router-link :to="'/donate'">DONATE</router-link></button>  
+
+        <h5 class="spring_due">The subscription lasts until the end of spring.</h5>
       </div>
 
     </div>
   </div>
 
-  <h5 class="spring_due">The subscription lasts until the end of spring.</h5>
-  <br>
+  
+  
   <h2 class="ready">Ready to make a difference this spring?</h2>
   <div class="btn_align">
-    <button class="btn fees_btn_last">DONATE</button> 
+    <button class="btn fees_btn_last"><router-link :to="'/donate'">DONATE</router-link></button> 
   </div>
 </div>
 </template>

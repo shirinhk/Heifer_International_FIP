@@ -1,10 +1,11 @@
 <template>
   <div class="containers">
     
-      <div class="hero">
+      <div class="hero">  
+        <img src="~@/assets/images/swing.png" alt="Behind the better world swing" class="swing">
         <h1 class="hero-title">This summer, be a house farmer with Heifer</h1>
         <h3 class="hero-text">We build a better world for local communities around the globe and you get to be a part of it.</h3>
-        <button class="btn btn-farmer">become a house farmer</button>
+        <button class="btn btn-farmer">become a house farmer</button>  
       </div>
 
       <div class="home-div row">
@@ -13,7 +14,7 @@
         </div>
         <div class="row-sm col">
           <p class="home-para">With small habits and a bit of guidance, you can grow small crops at your apartment or home garden!</p>
-          <button class="btn btn-outline-secondary btn-home">learn more</button>
+          <button class="btn btn-outline-dark btn-home"><a href="https://www.heifer.org/our-work/work-areas/environmental-sustainability.html">learn more</a></button>
         </div>
       </div>
 
@@ -45,7 +46,7 @@
       <div class="row share"> 
         <div class="row-sm col order-2 food_text">
           <h2 class="grow-text">Now that you know how and what to grow, share your crops with us!</h2>
-          <p class="grow-text">Share a picture on instagram with the hastag: #summerwithheifer with a recipe made with your home-grown veggies!</p>
+          <p class="grow-text">Share a picture on instagram with the hastag: <span class="bold">#summerwithheifer </span> with a recipe made with your home-grown veggies!</p>
         </div>
 
         <div class="row-sm col order-1 food_logo">

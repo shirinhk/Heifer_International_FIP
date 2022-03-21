@@ -4,7 +4,7 @@
     <header class="heifer-header">
       <nav class="navbar">
         
-          <router-link :to="'/home'"><img src="@/assets/images/logo.png" alt="Heifer logo" class="navbar-brand logo-m"></router-link>
+          <router-link :to="'/'"><img src="@/assets/images/logo.png" alt="Heifer logo" class="navbar-brand logo-m"></router-link>
           <button class="btn donate_btn nav-item"><router-link :to="'/donate'">donate</router-link></button>
         
       </nav>
@@ -23,10 +23,10 @@
         <div>
           <ul class="footer_nav_1">
             <li><h4>Sitemap</h4></li>
-            <li><p>Home</p></li>
+            <li><p><router-link :to="'/'">Home</router-link></p></li>
             <li><p>About us</p></li>
             <li><p>Contact us</p></li>
-            <li><button class="btn btn-footer">Donate</button></li>
+            <li><button class="btn btn-footer"><router-link :to="'/donate'">Donate</router-link></button></li>
           </ul>
         </div>
         <div>

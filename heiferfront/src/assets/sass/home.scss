@@ -8,7 +8,7 @@
 }
 
 .hero {
-  background-image: url("~@/assets/images/header_mobile_1.jpg");
+  background-image: url("~@/assets/images/header_veggies_ipad_2.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 750px;
@@ -16,6 +16,13 @@
   top: 0;
   left: 0;
   z-index: -99;
+}
+
+.swing {
+  width: 350px;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 .hero-title {
@@ -107,9 +114,13 @@
   height: auto;
 }
 
-@media screen and (min-width: 420px) {
+.bold {
+  font-family: $third-font-family;
+}
+
+@media screen and (min-width: 600px) {
   .hero {
-    background-image: url("~@/assets/images/header_veggies.png");
+    background-image: url("~@/assets/images/header_veggies_desktop.png");
     background-repeat: no-repeat;
     //height:710;
     width: 100%;
@@ -120,9 +131,13 @@
     z-index: -99;
   }
 
+  .swing {
+    width: 450px;
+  }
+
   .hero-title {
     z-index: 0;
-    margin: 100px 50px 0 50px;
+    margin: 250px 50px 0 50px;
     font-size: 34px;
   }
 
@@ -139,6 +154,11 @@
   .hero {
     text-align: center;
   }
+
+  .swing {
+    width: 550px;
+  }
+
   .hero-title {
     margin-top: 300px;
     font-size: 40px;

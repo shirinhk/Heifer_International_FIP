@@ -6,7 +6,7 @@ import Donate from '../views/Donate.vue'
 
 const routes = [
   {
-    path: '/home',
+    path: '/',
     name: 'Home',
     component: Home
   

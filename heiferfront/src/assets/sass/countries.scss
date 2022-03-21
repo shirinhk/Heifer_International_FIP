@@ -69,9 +69,10 @@
   position: absolute;
   top: 0;
   left: 70px;
-
+  visibility: hidden;
+  transition: all 0s ease 0.7s;
   width: 240px;
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   background-color: $second-color;
 
   h4 {
@@ -93,23 +94,27 @@
 }
 
 .honey:hover + .hover_project {
-  display: block;
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .milk_1:hover + .hover_project_milk_1 {
-  display: block;
+  visibility: visible;
+  transition-delay: 0s;
   top: 0;
   left: 170px;
 }
 
 .egg:hover + .hover_project_egg {
-  display: block;
+  visibility: visible;
+  transition-delay: 0s;
   top: 0;
   left: 330px;
 }
 
 .milk_2:hover + .hover_project_milk_2 {
-  display: block;
+  visibility: visible;
+  transition-delay: 0s;
   top: 0;
   left: 630px;
 }
