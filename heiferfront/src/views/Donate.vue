@@ -1,8 +1,8 @@
 <template>
   <div class="containers extra">
     <section class="positioning"></section>
-    <div class="donate_first_sec row">
-      <div class="donate_first_texts row-sm col">
+    <div class="donate_first_sec">
+      <div class="donate_first_texts">
         <h2 class="donate-title">End hunger and poverty by creating a lasting impact this summer</h2>
         <div class="yellow_block"></div>
         <p class="donate-text">Thank you for your ongoing support to Heifer International. Your monthly donation to Heifer 
@@ -14,7 +14,7 @@
         </ul>
       </div>
 
-      <div class="form_container row-sm col">  
+      <div class="form_container">  
           <div class="form_background">
             <h3 class="donation_form_title">Donation</h3>
             <form action="" method="post" class="form-group">

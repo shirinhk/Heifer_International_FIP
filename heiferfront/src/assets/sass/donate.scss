@@ -1,16 +1,19 @@
 .donate_first_sec {
   background-color: $second-color;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .positioning {
   background-color: $second-color;
   height: 100px;
+  width: 100%;
   margin-top: -120px;
 }
 
 .donate-title {
-  margin: 100px 50px 0 50px;
+  margin: 100px 150px 0 50px;
   font-size: 28px;
 }
 
@@ -42,7 +45,7 @@
 }
 
 .form_container {
-  margin-top: 100px;
+  margin: 100px 20px 0 20px;
 }
 
 .form_background {
@@ -147,4 +150,15 @@ label {
 
 .return {
   font-size: 16px;
+}
+
+@media screen and (min-width: 900px) {
+  .donate_first_sec {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .form_container {
+    margin-right: 100px;
+  }
 }
