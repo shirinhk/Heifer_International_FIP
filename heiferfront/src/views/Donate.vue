@@ -93,7 +93,7 @@
               <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <button
                   type="button"
-                  class="btn btn-light"
+                  class="btn btn-light btn-select-don"
                   v-on:click="latestType = '$10/month'"
                   data-bs-toggle="button"
                   @click="myToggleFunction()"
@@ -102,7 +102,7 @@
                 </button>
                 <button
                   type="button"
-                  class="btn btn-light"
+                  class="btn btn-light btn-select-don"
                   v-on:click="latestType = '$25/month'"
                   data-bs-toggle="button"
                   @click="myToggleFunction()"
@@ -111,7 +111,7 @@
                 </button>
                 <button
                   type="button"
-                  class="btn btn-light"
+                  class="btn btn-light btn-select-don"
                   v-on:click="latestType = '$50/month'"
                   data-bs-toggle="button"
                   @click="myToggleFunction()"
@@ -206,26 +206,30 @@
                 {{ city + " " }}{{ province + " " }}{{ postalcode }}
               </p>
               <h5 class="form_info">CREDIT CARD DETAILS</h5>
+              <label for="cardnumber">Card Number</label>
               <input
                 id="amountnubmer"
-                class="form-control input_2"
-                name="amountnubmer"
+                class="form-control"
+                name="cardnumber"
                 type="text"
                 placeholder="Card Number"
               />
+              <label for="expiration">Expiration Date</label>
               <input
                 id="expiration"
-                class="form-control input_2"
+                class="form-control"
                 name="expiration"
                 type="text"
-                placeholder="Expiration Date"
+                placeholder="MMYY"
               />
+              <label for="password">CVV</label>
               <input
                 id="cvv"
-                class="form-control input_2"
+                class="form-control"
                 name="cvv"
                 type="password"
                 placeholder="CVV"
+                maxlength="3"
               />
               <h5 class="form_info" v-if="latestType">
                 TODAY'S DONATION: {{ latestType }}
@@ -245,6 +249,14 @@
               <h3>Thank you!</h3>
               <h3 class="form_info_3">
                 Your donation will make a huge difference!
+              </h3>
+            </div>
+
+            <div v-show="step === 5" class="thanks">
+              <i v-if="flash" class="fa-solid fa-triangle-exclamation"></i>
+              <h3>We are so sorry :(</h3>
+              <h3 class="form_info_3">
+                We couldn't complete your donation, please try again!
               </h3>
             </div>
           </form>
@@ -278,6 +290,7 @@ export default {
       province: "",
       amountnubmer: "",
       latestType: "",
+      flash: "",
     };
   },
   methods: {
@@ -287,10 +300,13 @@ export default {
     next() {
       this.step++;
     },
+    error() {
+      this.step += 2;
+    },
 
-    myToggleFunction: function (event) {
-      let button = event.target;
-      button.classList.toggle("toggled");
+    myToggleFunction: function () {
+      let buttonSelect = document.querySelector(".btn-select-don");
+      buttonSelect.classList.toggle("toggled");
     },
 
     donate() {
@@ -306,26 +322,33 @@ export default {
       formData.append("province", this.province);
       formData.append("amount", this.latestType);
 
-      // Display the key/value pairs
-      // for (var pair of formData.entries()) {
-      //     console.log(pair[0]+ ', ' + pair[1]);
-      // }
-
-      let url = `heifer_international_back.test/donate`;
+      let url = "http://heifer_fip_back.test/api/donate";
 
       fetch(url, {
         method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
+        // headers: {
+        //   "Access-Control-Allow-Origin": "*",
+        //   "Content-Type": "multipart/form-data",
+        // },
         body: formData,
       })
         .then((res) => res.json())
         .then((data) => {
-          console.table(data);
+          // console.log(data);
+
+          if (data.message == "fail") {
+            this.flash = `We couldn't complete the donation, please try again`;
+            // console.log(this.flash);
+            this.error();
+          } else {
+            this.next();
+          }
+        })
+        .catch((err) => {
+          console.error(err);
         });
 
-      this.next();
+      // debugger;
     },
   },
 };
