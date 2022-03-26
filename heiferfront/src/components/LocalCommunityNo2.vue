@@ -21,9 +21,6 @@ export default {
   name: 'localcommunity2',
   props: {
     msg: String
-  },
-  data() {
-    return
   }
 }
 </script>

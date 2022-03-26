@@ -104,9 +104,6 @@ export default {
   name: 'simpledonate',
   props: {
     msg: String
-  },
-  data() {
-    return
   }
 }
 </script>

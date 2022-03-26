@@ -43,9 +43,6 @@ export default {
   name: 'countries',
   props: {
     msg: String
-  },
-  data() {
-    return
   }
 }
 

@@ -32,9 +32,6 @@ export default {
   name: 'whattogrow',
   props: {
     msg: String
-  },
-  data() {
-    return
   }
 }
 </script>
