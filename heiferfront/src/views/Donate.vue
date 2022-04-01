@@ -322,9 +322,9 @@ export default {
       formData.append("province", this.province);
       formData.append("amount", this.latestType);
 
-      let url = "http://heifer_fip_back.test/api/donate";
+      // let url = "http://heifer_fip_back.test/api/donate";
 
-      fetch(url, {
+      fetch("/donate", {
         method: "POST",
         // headers: {
         //   "Access-Control-Allow-Origin": "*",
