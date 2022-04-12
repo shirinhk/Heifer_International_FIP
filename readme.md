@@ -41,6 +41,7 @@ The project was developed with the following technologies:
 
 - HTML
 - SASS
+- Bootstrap
 - JavaScript
 - Vue.js
 - Node.js
